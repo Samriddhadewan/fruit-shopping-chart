@@ -6,6 +6,7 @@
     <title>Fruits shopping chart</title>
 <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
 <script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
     <nav class="container mx-auto border border-violet-950">
@@ -29,7 +30,7 @@
                         stroke-width="2"
                         d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
                     </svg>
-                    <span class="badge badge-sm indicator-item">0</span>
+                    <span id="chart-number" class="badge badge-sm indicator-item">0</span>
                   </div>
                 </div>
               </div>
@@ -70,7 +71,7 @@
                   <p>Papaya is a tropical fruit known for its sweet, orange flesh and numerous health benefits.
                   </p>
                   <p class="text-lg font-semibold">Cost : <span>40</span>taka</p>
-                    <button class="btn btn-primary">Buy Now</button>
+                    <button  class="btn add-btn btn-primary">Add to chart</button>
                 </div>
               </div>
             <div class="card card-compact bg-base-100 w-full h-[400px] md:w-80 shadow-xl">
@@ -84,7 +85,7 @@
                   <p>Pineapple is a tropical fruit recognized for its sweet, tangy flavor and high vitamin C content.
                   </p>
                   <p class="text-lg font-semibold">Cost : <span>40</span>taka</p>
-                    <button class="btn btn-primary">Buy Now</button>
+                    <button class="btn add-btn btn-primary">Add to chart</button>
 
                 </div>
               </div>
@@ -98,7 +99,7 @@
                   <h2 class="card-title">Banana</h2>
                   <p>Banana is a popular fruit known for its creamy texture, sweet flavor, and rich potassium content.</p>
                   <p class="text-lg font-semibold">Cost : <span>40</span>taka</p>
-                    <button class="btn btn-primary">Buy Now</button>
+                    <button class="btn add-btn btn-primary">Add to chart</button>
                 </div>
               </div>
             <div class="card card-compact bg-base-100 w-full h-[400px]  md:w-80 shadow-xl">
@@ -111,22 +112,24 @@
                   <h2 class="card-title">Strawberry</h2>
                   <p>Strawberry is a juicy, red fruit celebrated for its sweet flavor, fragrant aroma, and high vitamin C content.</p>
                   <p class="text-lg font-semibold">Cost : <span>40</span>taka</p>
-                    <button class="btn btn-primary">Buy Now</button>
+                    <button class="btn add-btn btn-primary">Add to chart</button>
 
                 </div>
               </div>
         </div>
         <div class="text-center flex-1">
-            <div class="chart">
+            <div class="chart"  >
                 <h1 class="text-5xl ">chart</h1>
             </div>
             <hr>
-            <div>
+            <div id="chart-box" class="flex border border-red-700
+            w-full text-center">
+
 
             </div>
         </div>
 
-
+        <script src="./scripts/app.js"></script>
     </section>
 </body>
 </html>
