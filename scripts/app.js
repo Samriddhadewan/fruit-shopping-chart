@@ -23,12 +23,34 @@ for(let btn of Btns){
         const fruitPriceNumber = stringToNumber(fruitPrice);
         const totalCostValue = document.getElementById("total-cost").innerText;
         const totalCost = stringToNumber(totalCostValue);
-
         finalCost = fruitPriceNumber + totalCost;
 
+
         setElementById("total-cost", finalCost);
+        setElementById("grand-final-price", finalCost);   
     })
 }
+
+function grandFinal(element){
+    const finalValue = document.getElementById("grand-final-price").innerText;
+
+    if(element === 'busket'){
+        setElementById("grand-final-price", finalCost + 50);
+    }
+    else if(element === "bag"){
+        setElementById("grand-final-price", finalCost + 20)
+    }
+    else if(element === "minus"){
+        setElementById("grand-final-price", finalValue -100);
+    }
+    else{
+        setElementById("grand-final-price", finalCost);
+    }
+
+}
+
+
+
 
 function setElementById(element, value){
     document.getElementById(element).innerText = value;
