@@ -8,7 +8,7 @@ for(let btn of Btns){
         const fruitName = element.target.parentNode.childNodes[1].innerText;
         const fruitPrice = element.target.parentNode.childNodes[5].childNodes[1].innerText;
 
-        const li = document.createElement("p");
+        const li = document.createElement("div");
         const p = document.createElement("p");
         const p2 = document.createElement("p");
 

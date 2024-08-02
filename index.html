@@ -9,7 +9,7 @@
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <nav class="container mx-auto border border-violet-950">
+    <nav class="container mx-auto ">
         <div class="navbar bg-base-100">
             <div class="flex-1">
               <a class="btn btn-ghost text-xl">Fruit shop</a>
@@ -58,8 +58,8 @@
             </div>
           </div>
     </nav>
-    <section class="container flex flex-col md:flex-col lg:flex-row border border-red-600 mx-auto">
-        <div class="product-container flex-1 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-5 p-5 border border-green-700">
+    <section class="container flex flex-col md:flex-col lg:flex-row  mx-auto">
+        <div class="product-container flex-1 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-5 p-5 ">
             <div class="card card-compact bg-base-100 w-full h-[400px]  md:w-80 shadow-xl">
                 <figure>
                   <img class="object-cover"
@@ -130,6 +130,16 @@
             </div>
             <div class="chart-total">
               <h1 class="text-2xl font-semibold ">total cost <span id="total-cost">0</span></h1>
+            </div>
+            <hr>
+            <div class="flex justify-center gap-4 button-container">
+              <button class="btn extra-btn btn-active">get a busket :50taka</button>
+              <button class="btn extra-btn btn-active">get a bag :20taka</button>
+              <button class="btn extra-btn btn-active">minus 100taka</button>
+            </div>
+            <hr>
+            <div class="grand-final">
+              <h1 class="text-2xl font-semibold">grand final cost <span>0</span></h1>
             </div>
         </div>
 
