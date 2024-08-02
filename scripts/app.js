@@ -20,25 +20,22 @@ for(let btn of Btns){
         const chartBox = document.getElementById("chart-box");
         chartBox.appendChild(li);
 
+        const fruitPriceNumber = stringToNumber(fruitPrice);
+        const totalCostValue = document.getElementById("total-cost").innerText;
+        const totalCost = stringToNumber(totalCostValue);
 
+        finalCost = fruitPriceNumber + totalCost;
 
-
+        setElementById("total-cost", finalCost);
     })
 }
-
-
-
-
-
-
 
 function setElementById(element, value){
     document.getElementById(element).innerText = value;
 }
-function convertToInt(element){
-    const value = document.getElementById(element).innerText;
-    const newValue = parseInt(value);
-    return newValue;
+function stringToNumber(element){
+    const value = parseInt(element);
+    return value;
 }
 
 
